@@ -17,7 +17,8 @@
     --price-color: rgba(0, 0, 0, 0.87);
 }
 
-.primary-bnt {
+.primary-bnt,
+.join-now {
     border-radius: 41px;
     background-color: rgb(224, 44, 109);
     padding: 10px 24px 10px 24px;
@@ -172,6 +173,75 @@ nav h3 {
     margin: 1rem auto;
 }
 
+.see-more-btn,
+button {
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 16px;
+    font-weight: 700;
+    padding-right: 4rem;
+    border: none;
+    text-align: right;
+    cursor: pointer;
+}
+
+/* ----------  online-shope-collection section end  ----------- */
+
+.products-place-container {
+    display: flex;
+    gap: 6rem;
+    padding: 6.25rem 7rem;
+}
+
+.product-place-discription h1 {
+    color: rgb(10, 8, 38);
+    font-size: 2.3rem;
+    font-weight: 700;
+    padding-top: 1rem;
+    align-items: center;
+    /* line-height: 60px; */
+}
+
+.product-place-discription p {
+    color: var(--discription-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.75rem;
+}
+
+.product-place-img img {
+    width: 25rem;
+    height: 16rem;
+    border-radius: 7px;
+}
+
+.join-now {
+    border-radius: 0;
+    margin-top: 1rem;
+}
+
+/* footer-container start */
+.footer-container {
+    text-align: center;
+    background-color: #01031be8;
+    color: rgb(255, 255, 255);
+    padding: 3.75rem 0;
+}
+
+.influencer h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.influencer-cupy-right {
+    color: rgb(217, 219, 225);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.influencer-icon i{
+    padding:   1rem;
+}
+
 /* -----------   responsive   --------  */
 /* ************************************* */
 /* -----------  small device    ------------- */
@@ -215,6 +285,16 @@ nav h3 {
         grid-template-columns: 1fr;
         margin: 1rem auto;
     }
+
+    .products-place-container {
+        flex-direction: column-reverse;
+        gap: 0rem;
+        padding: 2rem 1rem;
+    }
+
+    .product-place-discription {
+        padding-bottom: 1rem;
+    }
 }
 
 /* -----------  media device    ------------- */
@@ -242,13 +322,24 @@ nav h3 {
     .online-shope-logo img {
         padding: 0.8rem 1rem;
     }
+
     .online-shope-collection {
         grid-template-columns: repeat(2, 1fr);
-        
+
     }
-    .online-shope-section{
+
+    .online-shope-section {
         padding: 0;
-        
+
     }
-    
+
+    .products-place-container {
+        flex-direction: column-reverse;
+        gap: 0rem;
+        padding: 2rem 1rem;
+    }
+
+    .product-place-discription {
+        padding-bottom: 1rem;
+    }
 }
