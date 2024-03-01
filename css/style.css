@@ -4,8 +4,17 @@
     font-family: "Poppins";
 }
 
+.span-ratting-color {
+    color: rgb(94, 99, 102);
+    font-size: 14px;
+    font-weight: 700;
+}
+
 :root {
-    --header-color: rgb(58, 58, 58)
+    --header-color: rgb(58, 58, 58);
+    --ratting-color: rgb(251, 130, 0);
+    --discription-color: rgb(120, 120, 133);
+    --price-color: rgba(0, 0, 0, 0.87);
 }
 
 .primary-bnt {
@@ -85,22 +94,85 @@ nav h3 {
     height: 100%;
 }
 
-.online-shope-logo{
-    display: grid;
-    grid-template-columns:repeat(7, 1fr);
-    /* text-align: center; */
-    /* justify-content: center; */
-    padding: 3rem 3.8rem;
-}
-
-.online-shope-logo img{
-    padding: 0 1.8rem;
-}
 
 /* ----------  banner section end  ----------- */
 
+/* ----------  online-shope-collection section start  ----------- */
 
+.online-shope-section {
+    padding: 4rem;
+}
 
+.online-shope-header {
+    text-align: center;
+    padding-bottom: 2rem;
+    color: var(--header-color);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.online-shope-logo {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 3rem 3.8rem;
+}
+
+.online-shope-logo img {
+    padding: 0 1.8rem;
+}
+
+.ratting-icone {
+    color: var(--ratting-color);
+    padding: 5px 0px;
+}
+
+.online-shope-collection-container {
+    padding: 1rem;
+    width: 18rem;
+    height: 26.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background-color: rgb(255, 255, 255);
+}
+
+.online-shope-collection-details h3 {
+    color: var(--header-color);
+    padding: 5px 0px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.online-shope-price {
+    padding-bottom: 5px;
+    color: var(--price-color);
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.online-shope-price-discription {
+    color: rgb(120, 120, 133);
+    font-family: "Inter";
+    padding-bottom: 1rem;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.online-shope-collection-container img {
+
+    border-radius: 5px;
+    width: 18rem;
+    height: 16rem;
+}
+
+.online-shope-collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 1rem auto;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
 
 /* -----------   responsive   --------  */
 /* ************************************* */
@@ -109,13 +181,14 @@ nav h3 {
 @media screen and (max-width:576px) {
 
     nav,
-    nav>ul
-     {
+    nav>ul {
         flex-direction: column;
     }
-    .banner{
+
+    .banner {
         flex-direction: column-reverse;
     }
+
     ul li,
     a {
         padding-top: 10px;
@@ -123,7 +196,7 @@ nav h3 {
         text-decoration: none;
     }
 
-    .banner-title{
+    .banner-title {
         text-align: center;
     }
 
@@ -131,11 +204,12 @@ nav h3 {
         font-size: 2rem;
     }
 
-    .online-shope-logo{
-        grid-template-columns:repeat(4, 1fr) ;
+    .online-shope-logo {
+        grid-template-columns: repeat(4, 1fr);
         padding: 3rem 0.5rem;
     }
-    .online-shope-logo img{
+
+    .online-shope-logo img {
         padding: 0.5rem;
     }
 }
@@ -143,22 +217,26 @@ nav h3 {
 /* -----------  media device    ------------- */
 
 @media screen and (min-width:577px) and (max-width:950px) {
-    ul li,
-a {
-    
-    padding-right: 0.7rem;
-}
-header{
-    padding: 2rem 2rem
-}
-.banner-title h1{
-    font-size: 2.2rem;
-}
 
-.online-shope-logo{
-    grid-template-columns:repeat(4, 1fr) ;
-}
-.online-shope-logo img{
-    padding:0.8rem 1rem;
-}
+    ul li,
+    a {
+
+        padding-right: 0.7rem;
+    }
+
+    header {
+        padding: 2rem 2rem
+    }
+
+    .banner-title h1 {
+        font-size: 2.2rem;
+    }
+
+    .online-shope-logo {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .online-shope-logo img {
+        padding: 0.8rem 1rem;
+    }
 }
