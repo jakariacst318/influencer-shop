@@ -170,8 +170,6 @@ nav h3 {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin: 1rem auto;
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 
 /* -----------   responsive   --------  */
@@ -212,6 +210,11 @@ nav h3 {
     .online-shope-logo img {
         padding: 0.5rem;
     }
+
+    .online-shope-collection {
+        grid-template-columns: 1fr;
+        margin: 1rem auto;
+    }
 }
 
 /* -----------  media device    ------------- */
@@ -239,4 +242,13 @@ nav h3 {
     .online-shope-logo img {
         padding: 0.8rem 1rem;
     }
+    .online-shope-collection {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .online-shope-section{
+        padding: 0;
+        
+    }
+    
 }
